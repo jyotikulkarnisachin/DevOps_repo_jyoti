@@ -7,12 +7,12 @@ stage('Build')
 steps
 {
 echo "Building the Project.........."
-javac Main.java
+sh 'javac Main.java'
 }
 }
 stage('Run') {
             steps {
-                java Main
+                sh 'java Main'
             }
         }
 stage('Test') 
