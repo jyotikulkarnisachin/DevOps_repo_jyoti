@@ -4,11 +4,17 @@ stages
 {
 stage('Build') 
 {
-steps{
+steps
+{
 echo "Building the Project.........."
 javac Main.java
 }
 }
+stage('Run') {
+            steps {
+                java Main
+            }
+        }
 stage('Test') 
 {
 steps{
