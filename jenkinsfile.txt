@@ -6,6 +6,7 @@ stage('Build')
 {
 steps{
 echo "Building the Project.........."
+javac Main.java
 }
 }
 stage('Test') 
